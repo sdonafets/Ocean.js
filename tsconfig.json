@@ -25,6 +25,12 @@
       ],
       "@/components/*": [
         "components/*"
+      ],
+      "@/graphql/*": [
+        "graphql/*"
+      ],
+      "@/libs/*": [
+        "libs/*"
       ]
     }
   },
