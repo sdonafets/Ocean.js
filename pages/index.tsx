@@ -21,7 +21,7 @@ const AllUsersQuery = gql`
     }
 `;
 
-export default function Home() {
+const Home = ({props}) => {
     const {data, loading, error} = useQuery(AllUsersQuery)
 
     if (loading) return <p>Loading...</p>
@@ -33,14 +33,14 @@ export default function Home() {
                 <title>Home</title>
             </Head>
 
-            <div className="container mx-auto max-w-5xl my-20">
-                <p className="text-lg font-medium">Returned {data?.users.edges.length || "0"} results</p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div>
+                <p>Returned {data?.users.edges.length || "0"} results</p>
+                <ul>
                     {data?.users.edges.map(u => (
-                        <li key={u.id} className="shadow  max-w-md  rounded">
-                            <div className="p-5 flex flex-col space-y-2">
-                                <p className="text-sm text-blue-500">{u.email}</p>
-                                <p className="text-lg font-medium">{u.role}</p>
+                        <li key={u.id}>
+                            <div>
+                                <p>{u.email}</p>
+                                <p>{u.role}</p>
                             </div>
                         </li>
                     ))}
@@ -48,4 +48,5 @@ export default function Home() {
             </div>
         </div>
     )
-}
+};
+export default Home;

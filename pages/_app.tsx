@@ -1,15 +1,18 @@
 import {AppProps} from "next/app";
-import Layout from "@/components/Layout";
-import "@/styles/tailwind.css";
+import dynamic from "next/dynamic";
+import 'antd/dist/antd.css';
 import {ApolloProvider} from "@apollo/client";
-import apolloClient from "@/libs/apollo";
+import {useApollo} from "@/libs/apollo";
 
 function MyApp({Component, pageProps}: AppProps) {
+    const apolloClient = useApollo(pageProps);
+    const DynamicLayout = dynamic(() => import("../components/Layout"))
+
     return (
         <ApolloProvider client={apolloClient}>
-            <Layout>
+            <DynamicLayout>
                 <Component {...pageProps} />
-            </Layout>
+            </DynamicLayout>
         </ApolloProvider>
     );
 }
