@@ -9,6 +9,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@apollo/client": "^3.5.6",
+    "@auth0/nextjs-auth0": "^1.6.2",
+    "@fontsource/oooh-baby": "^4.5.0",
     "@prisma/client": "^3.6.0",
     "antd": "^4.17.3",
     "apollo-server-micro": "^3.5.0",

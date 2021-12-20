@@ -29,10 +29,6 @@ const Home = ({props}) => {
 
     return (
         <div>
-            <Head>
-                <title>Home</title>
-            </Head>
-
             <div>
                 <p>Returned {data?.users.edges.length || "0"} results</p>
                 <ul>

@@ -1,0 +1,26 @@
+@import "~@fontsource/oooh-baby/index.css";
+
+.navbar {
+  background-color: #d9ecfd;
+  padding: 1rem 24px;
+
+  .menu {
+    border: none;
+  }
+}
+
+.logo {
+  height: 32px;
+  margin-left: 1rem;
+}
+
+.title {
+  font-family: "Oooh Baby", serif;
+  display: inline-flex;
+  margin-left: 5px;
+
+  .detail{
+    margin: 0;
+    color: #6fc4fc;
+  }
+}
