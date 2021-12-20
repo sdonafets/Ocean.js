@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import {gql, useQuery} from '@apollo/client'
 
 const AllUsersQuery = gql`
