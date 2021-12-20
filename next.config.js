@@ -1,6 +1,7 @@
 const path = require('path')
+const withMDX = require('@next/mdx')()
 
-module.exports = {
+module.exports = withMDX({
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
@@ -13,4 +14,4 @@ module.exports = {
             },
         ]
     },
-}
+});
