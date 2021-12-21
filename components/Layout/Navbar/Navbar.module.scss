@@ -6,6 +6,9 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid darkgray;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   .menu {
     border: none;

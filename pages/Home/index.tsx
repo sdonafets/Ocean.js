@@ -1,7 +1,7 @@
-import {gql} from '@apollo/client'
 import AboutMe from "@/components/AboutMe";
+import style from "./Home.module.scss";
 
-const AllUsersQuery = gql`
+/*const AllUsersQuery = gql`
     query allUsersQuery($first: Int, $after: String) {
         users(first: $first, after: $after){
             pageInfo {
@@ -20,10 +20,11 @@ const AllUsersQuery = gql`
         }
     }
 `;
+*/
 
 const Home = () => {
     return (
-        <div>
+        <div className={style.content}>
             <AboutMe/>
         </div>
     )

@@ -11,7 +11,7 @@ const AboutMe = () => {
             <Row justify={"space-between"}>
                 <Col span={6}/>
                 <Col span={12}>
-                    <Avatar size={200}
+                    <Avatar size={150}
                             src={<Image alt="Picture of the author" layout={"fill"} src={"/assets/85155592.jpg"}/>}/>
                 </Col>
                 <Col span={6}/>
@@ -45,9 +45,14 @@ const AboutMe = () => {
             <Row justify={"start"}>
                 <Col span={6}/>
                 <Col span={12}>
+                    <Space size={"large"}>
                     <Typography.Text className={styles.description}>
                         <Link href={"https://github.com/sdonafets/"}>GitHub</Link>
                     </Typography.Text>
+                    <Typography.Text className={styles.description}>
+                        <Link href={"https://www.linkedin.com/in/stefanodesantis4"}>Linkedin</Link>
+                    </Typography.Text>
+                    </Space>
                 </Col>
                 <Col span={6}/>
             </Row>
