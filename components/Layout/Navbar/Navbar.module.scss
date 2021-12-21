@@ -3,24 +3,19 @@
 .navbar {
   background-color: #d9ecfd;
   padding: 1rem 24px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgray;
 
   .menu {
     border: none;
   }
-}
 
-.logo {
-  height: 32px;
-  margin-left: 1rem;
-}
-
-.title {
-  font-family: "Oooh Baby", serif;
-  display: inline-flex;
-  margin-left: 5px;
-
-  .detail{
-    margin: 0;
-    color: #6fc4fc;
+  .logo {
+    height: 32px;
+    margin-left: 1rem;
   }
 }
+

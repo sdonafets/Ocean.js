@@ -1,32 +1,21 @@
-import React, {useState} from "react";
-import {Button, Drawer, Typography} from "antd";
+import React from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.scss";
 import logo from "@/assets/wave.png";
+import { useRouter } from "next/router";
+import { Button, Input } from "antd";
 
-const Navbar = ({menu}) => {
-    const [visible, setVisible] = useState(false);
+const Navbar = () => {
+    const router = useRouter();
     return (
         <nav className={styles.navbar}>
             <Button
                 className={styles.menu}
                 type="ghost"
                 icon={<Image src={logo} className={styles.logo} alt="logo"/>}
-                onClick={() => setVisible(true)}
+                onClick={() => router.push("/")}
             />
-            <Drawer
-                title="Ocean.js"
-                placement="left"
-                onClose={() => setVisible(false)}
-                visible={visible}
-            >
-                {menu}
-            </Drawer>
-            <Typography className={styles.title}>
-                <Typography.Title  className={styles.detail}>
-                    Ocean.js
-                </Typography.Title>
-            </Typography>
+            <Input.Search placeholder="Ricerca" onSearch={(z)=>console.log(z)} enterButton style={{ width: 200 }}/>
         </nav>
     );
 };
