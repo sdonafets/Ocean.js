@@ -1,4 +1,4 @@
-import {gql, useQuery} from '@apollo/client'
+import {gql} from '@apollo/client'
 import AboutMe from "@/components/AboutMe";
 
 const AllUsersQuery = gql`
@@ -21,12 +21,7 @@ const AllUsersQuery = gql`
     }
 `;
 
-const Home = ({props}) => {
-    const {data, loading, error} = useQuery(AllUsersQuery)
-
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Oh no... {error.message}</p>
-
+const Home = () => {
     return (
         <div>
             <AboutMe/>
