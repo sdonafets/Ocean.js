@@ -5,6 +5,7 @@ import {ApolloProvider} from "@apollo/client";
 import {useApollo} from "@/libs/apollo";
 import 'antd/dist/antd.css';
 import Head from "next/head";
+import "@/styles/global.scss";
 
 function MyApp({Component, pageProps}: AppProps) {
     const apolloClient = useApollo(pageProps);

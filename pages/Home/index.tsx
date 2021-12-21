@@ -1,4 +1,5 @@
 import {gql, useQuery} from '@apollo/client'
+import AboutMe from "@/components/AboutMe";
 
 const AllUsersQuery = gql`
     query allUsersQuery($first: Int, $after: String) {
@@ -28,19 +29,7 @@ const Home = ({props}) => {
 
     return (
         <div>
-            <div>
-                <p>Returned {data?.users.edges.length || "0"} results</p>
-                <ul>
-                    {data?.users.edges.map(u => (
-                        <li key={u.id}>
-                            <div>
-                                <p>{u.email}</p>
-                                <p>{u.role}</p>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <AboutMe/>
         </div>
     )
 };

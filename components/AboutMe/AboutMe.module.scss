@@ -1,0 +1,16 @@
+@import "~@fontsource/raleway/index.css";
+
+.content {
+  margin-top: 50px;
+  background: #ffffff;
+  width: 100%;
+
+  .title {
+    font-size: 1.875rem;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
