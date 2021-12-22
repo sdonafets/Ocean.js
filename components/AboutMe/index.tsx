@@ -4,6 +4,7 @@ import styles from "./AboutMe.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import Avatar from "antd/lib/avatar/avatar";
+import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 
 const AboutMe = () => {
   return (
@@ -99,11 +100,22 @@ const AboutMe = () => {
         >
           <Space size={"large"}>
             <Typography.Text className={styles.description}>
-              <Link href={"https://github.com/sdonafets/"}>GitHub</Link>
+              <Link passHref href={"https://github.com/sdonafets/"}>
+                <Space size="small">
+                  <GithubOutlined />
+                  GitHub
+                </Space>
+              </Link>
             </Typography.Text>
             <Typography.Text className={styles.description}>
-              <Link href={"https://www.linkedin.com/in/stefanodesantis4"}>
-                Linkedin
+              <Link
+                passHref
+                href={"https://www.linkedin.com/in/stefanodesantis4"}
+              >
+                <Space size="small">
+                  <LinkedinOutlined />
+                  Linkedin
+                </Space>
               </Link>
             </Typography.Text>
           </Space>
