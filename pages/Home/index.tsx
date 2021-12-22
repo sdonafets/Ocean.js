@@ -23,10 +23,10 @@ import style from "./Home.module.scss";
 */
 
 const Home = () => {
-    return (
-        <div className={style.content}>
-            <AboutMe/>
-        </div>
-    )
+  return (
+    <div className={style.content}>
+      <AboutMe />
+    </div>
+  );
 };
 export default Home;
