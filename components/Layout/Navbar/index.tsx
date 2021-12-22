@@ -8,15 +8,9 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={() => router.push("/")}>
         <Image src="/assets/wave.png" width="18" height="18" alt="logo" />
-        <Button
-          className={styles.menu}
-          type="link"
-          onClick={() => router.push("/")}
-        >
-          Ocean.js
-        </Button>
+        Ocean.js
       </div>
     </nav>
   );

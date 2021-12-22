@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Posts from "@/components/Posts";
 import style from "./Home.module.scss";
 
 /*const AllUsersQuery = gql`
@@ -26,6 +27,7 @@ const Home = () => {
   return (
     <div className={style.content}>
       <AboutMe />
+      <Posts className={style.posts} />
     </div>
   );
 };

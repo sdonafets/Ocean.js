@@ -15,14 +15,12 @@
     display: flex;
     align-items: center;
     align-content: center;
-  }
-
-  .menu {
-    border: none;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 19px;
-    color: #2386d6;
+    line-height: 15px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

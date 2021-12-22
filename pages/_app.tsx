@@ -14,9 +14,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Ocean.js</title>
+        <title>Ocean.js - Un oceano di informazioni.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="index, follow" />
+        <meta charSet="utf-8" />
+        <meta name="keywords" content="oceanjs, developer" />
         <meta name="description" content="Ocean. Un oceano di informazioni." />
       </Head>
       <UserProvider>

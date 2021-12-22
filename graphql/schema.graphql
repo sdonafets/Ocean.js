@@ -12,7 +12,16 @@ type PageInfo {
   hasNextPage: Boolean
 }
 
+type Post {
+  description: String
+  id: String
+  image: String
+  path: String
+  title: String
+}
+
 type Query {
+  posts: [Post]
   users(after: String, first: Int): Response
 }
 
